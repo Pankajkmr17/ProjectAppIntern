@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:contentDescription="@string/app_name"
+    tools:context=".AddActivity">
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <ImageView
+           android:id="@+id/page1background"
+           android:layout_width="0dp"
+           android:layout_height="430dp"
+           android:layout_marginBottom="480dp"
+
+           android:background="@drawable/page1back"
+
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.0"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintVertical_bias="0.937" />
+       <ImageView
+           android:id="@+id/back_icon"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="14dp"
+           android:layout_marginTop="30dp"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="@id/page1background"
+           app:srcCompat="@drawable/back_icon" />
+
+       <ImageView
+           android:id="@+id/bookmark_icon"
+           android:layout_width="36dp"
+           android:layout_height="36dp"
+           android:layout_marginStart="314dp"
+           android:layout_marginTop="30dp"
+           android:layout_marginEnd="20dp"
+           app:layout_constraintBottom_toBottomOf="@+id/back_icon"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toEndOf="@id/back_icon"
+           app:layout_constraintTop_toTopOf="@id/page1background"
+           app:srcCompat="@drawable/bookmark" />
+       <TextView
+           android:id="@+id/delicious_c_text"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+           android:layout_centerVertical="true"
+           android:layout_marginStart="12dp"
+           android:layout_marginBottom="270dp"
+           android:gravity="center"
+           android:text="@string/delicious_c"
+           android:textAppearance="@style/delicious_c"
+           android:textStyle="bold"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/page1background"
+           app:layout_constraintVertical_bias="0.0"
+
+           app:lineHeight="19sp" />
+
+       <ImageView
+           android:id="@+id/imageView4"
+           android:layout_width="25dp"
+           android:layout_height="0dp"
+
+           android:layout_marginStart="14dp"
+           android:layout_marginBottom="246dp"
+           app:layout_constraintStart_toStartOf="@+id/delicious_c_text"
+           app:layout_constraintTop_toBottomOf="@+id/delicious_c_text"
+           app:layout_constraintVertical_bias="0.0"
+           app:srcCompat="@drawable/loc_icon" />
+
+
+       <TextView
+           android:id="@+id/maecenas_ba_text"
+           android:layout_width="131dp"
+           android:layout_height="17dp"
+           android:layout_centerHorizontal="true"
+           android:layout_centerVertical="true"
+           android:layout_marginTop="8dp"
+           android:gravity="top"
+           android:textStyle="bold"
+           android:text="Maecenas Bokery"
+           android:textAppearance="@style/maecenas_ba"
+           android:textColor="#77838F"
+           app:layout_constraintStart_toEndOf="@id/imageView4"
+           app:layout_constraintTop_toBottomOf="@id/delicious_c_text" />
+
+       <LinearLayout
+           android:id="@+id/linearLayout"
+           android:layout_width="110dp"
+           android:layout_height="28dp"
+           android:layout_marginStart="240dp"
+           android:layout_marginEnd="14dp"
+           android:orientation="horizontal"
+           app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/page1background"
+           tools:ignore="DuplicateIds,MissingConstraints">
+
+
+           <ImageView
+               android:id="@+id/minus"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:layout_weight="1"
+               app:srcCompat="@drawable/minus_icon" />
+
+           <TextView
+               android:id="@+id/min_puls_text"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:textSize="19dp"
+               android:textColor="#77838F"
+               android:layout_weight="1"
+               android:gravity="center"
+               android:text="5" />
+
+           <ImageView
+               android:id="@+id/plus"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:layout_weight="1"
+               app:srcCompat="@drawable/plus_icon" />
+       </LinearLayout>
+
+
+       <!--    -->
+
+       <LinearLayout
+           android:id="@+id/linearLayout3"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="14dp"
+           android:layout_marginEnd="14dp"
+           android:orientation="vertical"
+           app:layout_constraintBottom_toTopOf="@id/image_down"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/page1background">
+
+           <TextView
+               android:id="@+id/product_detels_text"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_gravity="top"
+               android:layout_marginTop="70dp"
+               android:layout_marginStart="14dp"
+               android:layout_marginEnd="14dp"
+               android:gravity="top"
+               android:textStyle="bold"
+               android:lineSpacingExtra="7sp"
+               android:text="@string/vestibulum_"
+               android:textAppearance="@style/vestibulum_" />
+       </LinearLayout>
+
+       <ImageView
+           android:id="@+id/image_down"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="167dp"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+
+           app:layout_constraintHorizontal_bias="1.0"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/imageView4"
+           app:srcCompat="@drawable/page1_ract" />
+
+
+       <Button
+           android:id="@+id/addtocartbtn"
+
+           android:layout_width="366dp"
+           android:layout_height="48dp"
+           android:layout_marginEnd="20dp"
+           android:layout_marginBottom="16dp"
+           android:background="@drawable/black_button"
+
+           android:gravity="center"
+           android:text="Add To Cart"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent" />
+
+
+       <RelativeLayout
+           android:id="@+id/relative_layout_1"
+           android:layout_width="376dp"
+           android:layout_height="31dp"
+           android:layout_margin="14dp"
+           android:gravity="center"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="@id/image_down">
+
+
+           <TextView
+               android:id="@+id/pro_amount_text"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:layout_alignParentStart="true"
+
+               android:layout_marginStart="1dp"
+               android:gravity="top|center"
+               android:padding="5dp"
+               android:text="Product Amount:"
+               android:textAppearance="@style/product_amo"
+               android:textStyle="bold" />
+
+           <TextView
+               android:id="@+id/pro_amount_price"
+               android:layout_width="139dp"
+               android:layout_height="26dp"
+               android:textAppearance="@style/some_id"
+               android:layout_alignParentEnd="true"
+               android:layout_marginStart="89dp"
+               android:layout_marginEnd="7dp"
+               android:gravity="right|top"
+               android:textStyle="bold"
+               android:layout_toEndOf="@id/pro_amount_text"
+               android:text="$36.90" />
+       </RelativeLayout>
+
+       <RelativeLayout
+           android:id="@+id/relative_layout_2"
+           android:layout_width="376dp"
+           android:layout_height="31dp"
+           android:layout_margin="14dp"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintTop_toBottomOf="@id/relative_layout_1"
+           app:layout_constraintStart_toStartOf="parent"
+           >
+           <TextView
+               android:id="@+id/delivery_amount_text"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:layout_alignParentStart="true"
+               android:layout_marginStart="1dp"
+               android:gravity="top|center"
+
+               android:padding="5dp"
+               android:text="Delivery Fee:"
+               android:textAppearance="@style/product_amo"
+               android:textStyle="bold" />
+
+           <TextView
+               android:id="@+id/delivery_amo_price"
+               android:layout_width="139dp"
+               android:layout_height="26dp"
+               android:textAppearance="@style/some_id"
+               android:layout_alignParentEnd="true"
+               android:layout_marginStart="89dp"
+               android:layout_marginEnd="7dp"
+               android:gravity="right|top"
+               android:textStyle="bold"
+               android:layout_toEndOf="@+id/delivery_amount_text"
+               android:text="$12" />
+
+
+       </RelativeLayout>
+
+       <RelativeLayout
+           android:id="@+id/relative_layout_3"
+           android:layout_width="376dp"
+           android:layout_height="31dp"
+           android:layout_margin="14dp"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.657"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@id/relative_layout_2"
+           >
+           <TextView
+               android:id="@+id/total_text"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:layout_alignParentStart="true"
+               android:layout_marginStart="1dp"
+               android:gravity="top|center"
+
+               android:padding="5dp"
+               android:text="TOTAL:"
+               android:textAppearance="@style/product_amo"
+               android:textStyle="bold" />
+
+           <TextView
+               android:id="@+id/total_price"
+               android:layout_width="139dp"
+               android:layout_height="26dp"
+               android:textAppearance="@style/some_id"
+               android:layout_alignParentEnd="true"
+               android:layout_marginStart="89dp"
+               android:layout_marginEnd="7dp"
+               android:gravity="right|top"
+               android:textStyle="bold"
+               android:layout_toEndOf="@+id/total_text"
+               android:text="$48.90" />
+
+       </RelativeLayout>
+
+       <com.makeramen.roundedimageview.RoundedImageView
+           android:id="@+id/imageView1"
+           android:layout_width="@dimen/_280mdp"
+           android:layout_height="262dp"
+           android:layout_gravity="center"
+           android:layout_margin="@dimen/_16mdp"
+           android:layout_marginEnd="@dimen/_40mdp"
+           android:background="@drawable/platefood"
+           android:scaleType="centerCrop"
+           app:layout_constraintBottom_toBottomOf="@+id/page1background"
+           app:layout_constraintEnd_toEndOf="@+id/page1background"
+           app:layout_constraintStart_toStartOf="@+id/page1background"
+           app:layout_constraintTop_toBottomOf="@+id/back_icon"
+           app:riv_border_width="0dp"
+           app:riv_corner_radius="25dip"
+           app:riv_mutate_background="true"
+           tools:ignore="MissingConstraints" />
+
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

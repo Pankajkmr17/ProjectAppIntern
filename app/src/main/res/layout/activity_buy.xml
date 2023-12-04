@@ -1,0 +1,901 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/some_id"
+    android:layout_width="410dp"
+    android:gravity="center"
+    android:layout_height="896dp"
+    android:fitsSystemWindows="true"
+    android:background="#F9F9F9"
+    android:clipToOutline="true"
+    android:backgroundTint="@color/white"
+    android:elevation="4dp">
+
+
+    <View
+        android:id="@+id/header"
+        android:layout_width="386dp"
+        android:layout_height="44dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="4dp">
+
+    </View>
+
+    <View
+        android:id="@+id/icon"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/back_icon" />
+
+    <View
+        android:id="@+id/image"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="338dp"
+
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/image_icon_page2_3" />
+
+    <View
+        android:id="@+id/rectangle_bg"
+        android:layout_width="414dp"
+        android:layout_height="774dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="101dp"
+        android:background="@drawable/rectangle_page3_bg">
+
+
+    </View>
+
+    <TextView
+        android:id="@+id/etiam_macar"
+        android:layout_width="222dp"
+        android:layout_height="22dp"
+        android:gravity="top"
+        android:layout_alignTop="@+id/rectangle_bg"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="14dp"
+        android:lineHeight="19sp"
+        android:textStyle="bold"
+        android:textColor="#1E2022"
+        android:text="Etiam Macarons Package"
+        android:textAppearance="@style/etiam_macar" />
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/imageView5"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        -->
+    <!--        app:srcCompat="@drawable/start_icon" />-->
+    <RelativeLayout
+        android:id="@+id/score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/rectangle_bg"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="70dp"
+        android:gravity="center">
+
+
+
+        <LinearLayout
+            android:id="@+id/start_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/start_icon1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:srcCompat="@drawable/start_icon" />
+
+            <ImageView
+                android:id="@+id/start_icon2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:srcCompat="@drawable/start_icon" />
+
+            <ImageView
+                android:id="@+id/start_icon3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:srcCompat="@drawable/start_icon" />
+
+            <ImageView
+                android:id="@+id/start_icon4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:srcCompat="@drawable/start_icon" />
+
+            <ImageView
+                android:id="@+id/start_icon5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:srcCompat="@drawable/start_icon" />
+
+            <TextView
+                android:id="@+id/k_people_re"
+                android:layout_width="wrap_content"
+                android:layout_height="17dp"
+                android:layout_marginStart="2sp"
+                android:text="(1.2k people recommended)"
+                android:textAppearance="@style/k_people_re" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/location_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/score"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="11dp"
+        app:srcCompat="@drawable/location_page3" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="99dp"
+        android:layout_height="17dp"
+        android:layout_below="@+id/score"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="9dp"
+        android:lineHeight="17sp"
+
+        android:layout_toEndOf="@+id/location_icon"
+        android:gravity="top"
+        android:text="Litora Bakery"
+        android:textAppearance="@style/litora_bake" />
+
+
+    <View
+        android:id="@+id/mask"
+        android:layout_width="350dp"
+        android:layout_height="270dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="181dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/platefood"
+        android:foregroundGravity="center" />
+
+    <ImageView
+        android:id="@+id/rectangle"
+        android:layout_width="20dp"
+        android:layout_height="340dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="5dp"
+        android:layout_below="@+id/mask"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectangle_page3"
+        />
+
+    <RelativeLayout
+        android:id="@+id/package_siz_group"
+        android:layout_width="439dp"
+        android:layout_height="85dp"
+        android:layout_alignTop="@+id/rectangle"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="30dp"
+        android:clipToOutline="true">
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/package_siz"
+        android:layout_width="114dp"
+        android:layout_height="19dp"
+
+        android:layout_alignTop="@+id/package_siz_group"
+        android:gravity="top"
+        android:lineHeight="17sp"
+        android:text="Package Size"
+        android:layout_marginStart="@dimen/_16mdp"
+        android:textAppearance="@style/package_siz"
+        android:textStyle="bold" />
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:id="@id/horizontal_scrollerview"
+        android:layout_alignTop="@+id/package_siz_group"
+        android:layout_alignBottom="@id/package_siz_group"
+        android:layout_marginTop="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_alignTop="@+id/horizontal_scrollerview"
+            android:layout_alignBottom="@id/horizontal_scrollerview"
+            android:orientation="horizontal"
+            tools:ignore="ExtraText">
+
+            />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom|center">
+
+                <ImageView
+                    android:id="@+id/packege1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+
+                    android:background="@drawable/rect_packsize_icon_page3"
+                    android:backgroundTint="#F9F9F9"
+                    android:textAlignment="center" />
+
+                <TextView
+
+                    android:id="@+id/pcs1"
+
+                    android:layout_width="69dp"
+                    android:layout_height="36dp"
+                    android:layout_alignStart="@+id/packege1"
+
+                    android:layout_alignEnd="@+id/packege1"
+                    android:layout_alignBottom="@+id/packege1"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginBottom="2dp"
+                    android:gravity="center_horizontal|top"
+                    android:text="1pcs"
+                    android:textAppearance="@style/pcs" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom|center">
+
+                <ImageView
+                    android:id="@+id/packege2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+
+                    android:background="@drawable/rect_packsize_icon_page3"
+                    android:backgroundTint="#F6F0F0"
+                    android:textAlignment="center" />
+
+                <TextView
+
+                    android:id="@+id/pcs2"
+
+                    android:layout_width="69dp"
+                    android:layout_height="36dp"
+                    android:layout_alignStart="@+id/packege2"
+
+                    android:layout_alignEnd="@+id/packege2"
+                    android:layout_alignBottom="@+id/packege2"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginBottom="2dp"
+                    android:gravity="center_horizontal|top"
+                    android:text="2pcs"
+                    android:textAppearance="@style/pcs" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom|center">
+
+                <ImageView
+                    android:id="@+id/packege3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+
+                    android:background="@drawable/rect_packsize_icon_page3"
+                    android:backgroundTint="#F9F9F9"
+                    android:textAlignment="center" />
+
+                <TextView
+
+                    android:id="@+id/pcs3"
+
+                    android:layout_width="69dp"
+                    android:layout_height="36dp"
+                    android:layout_alignStart="@+id/packege3"
+
+                    android:layout_alignEnd="@+id/packege3"
+                    android:layout_alignBottom="@+id/packege3"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginBottom="2dp"
+                    android:gravity="center_horizontal|top"
+                    android:text="3pcs"
+                    android:textAppearance="@style/pcs" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom|center">
+
+                <ImageView
+                    android:id="@+id/packege4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+
+                    android:background="@drawable/rect_packsize_icon_page3"
+                    android:backgroundTint="#F9F9F9"
+                    android:textAlignment="center" />
+
+                <TextView
+
+                    android:id="@+id/pcs4"
+
+                    android:layout_width="69dp"
+                    android:layout_height="36dp"
+                    android:layout_alignStart="@+id/packege4"
+
+                    android:layout_alignEnd="@+id/packege4"
+                    android:layout_alignBottom="@+id/packege4"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginBottom="2dp"
+                    android:gravity="center_horizontal|top"
+                    android:text="4pcs"
+                    android:textAppearance="@style/pcs" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom|center">
+
+                <ImageView
+                    android:id="@+id/packege5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+
+                    android:background="@drawable/rect_packsize_icon_page3"
+                    android:backgroundTint="#F9F9F9"
+                    android:textAlignment="center" />
+
+                <TextView
+
+                    android:id="@+id/pcs5"
+
+                    android:layout_width="69dp"
+                    android:layout_height="36dp"
+                    android:layout_alignStart="@+id/packege5"
+
+                    android:layout_alignEnd="@+id/packege5"
+                    android:layout_alignBottom="@+id/packege5"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginBottom="2dp"
+                    android:gravity="center_horizontal|top"
+                    android:text="5pcs"
+                    android:textAppearance="@style/pcs" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom|center">
+
+                <ImageView
+                    android:id="@+id/packege6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+
+                    android:background="@drawable/rect_packsize_icon_page3"
+                    android:backgroundTint="#F9F9F9"
+                    android:textAlignment="center" />
+
+                <TextView
+
+                    android:id="@+id/pcs6"
+
+                    android:layout_width="69dp"
+                    android:layout_height="36dp"
+                    android:layout_alignStart="@+id/packege6"
+
+                    android:layout_alignEnd="@+id/packege6"
+                    android:layout_alignBottom="@+id/packege6"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginBottom="2dp"
+                    android:gravity="center_horizontal|top"
+                    android:text="6pcs"
+                    android:textAppearance="@style/pcs" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom|center">
+
+                <ImageView
+                    android:id="@+id/packege7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+
+                    android:background="@drawable/rect_packsize_icon_page3"
+                    android:backgroundTint="#F9F9F9"
+                    android:textAlignment="center" />
+
+                <TextView
+
+                    android:id="@+id/pcs7"
+
+                    android:layout_width="69dp"
+                    android:layout_height="36dp"
+                    android:layout_alignStart="@+id/packege7"
+
+                    android:layout_alignEnd="@+id/packege7"
+                    android:layout_alignBottom="@+id/packege7"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginBottom="2dp"
+                    android:gravity="center_horizontal|top"
+                    android:text="7pcs"
+                    android:textAppearance="@style/pcs" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom|center">
+
+                <ImageView
+                    android:id="@+id/packege8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+
+                    android:background="@drawable/rect_packsize_icon_page3"
+                    android:backgroundTint="#F9F9F9"
+                    android:textAlignment="center" />
+
+                <TextView
+
+                    android:id="@+id/pcs8"
+
+                    android:layout_width="69dp"
+                    android:layout_height="36dp"
+                    android:layout_alignStart="@+id/packege8"
+
+                    android:layout_alignEnd="@+id/packege8"
+                    android:layout_alignBottom="@+id/packege8"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginBottom="2dp"
+                    android:gravity="center_horizontal|top"
+                    android:text="8pcs"
+                    android:textAppearance="@style/pcs" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:gravity="bottom|center">
+
+                <ImageView
+                    android:id="@+id/packege9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+
+                    android:background="@drawable/rect_packsize_icon_page3"
+                    android:backgroundTint="#F9F9F9"
+                    android:textAlignment="center" />
+
+                <TextView
+
+                    android:id="@+id/pcs9"
+
+                    android:layout_width="69dp"
+                    android:layout_height="36dp"
+                    android:layout_alignStart="@+id/packege9"
+
+                    android:layout_alignEnd="@+id/packege9"
+                    android:layout_alignBottom="@+id/packege9"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginBottom="2dp"
+                    android:gravity="center_horizontal|top"
+                    android:text="9pcs"
+                    android:textAppearance="@style/pcs" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <!--Macarons Flavors-->
+
+    <RelativeLayout
+        android:id="@+id/Macronflavors_relativelayout"
+        android:layout_width="439dp"
+        android:layout_height="85dp"
+        android:layout_below="@+id/horizontal_scrollerview"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="29dp"
+        android:clipToOutline="true"
+        tools:ignore="DuplicateIds"/>
+
+
+
+
+    <TextView
+        android:id="@+id/macronflavors_text"
+        android:layout_width="114dp"
+        android:layout_height="19dp"
+        android:layout_alignTop="@+id/Macronflavors_relativelayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginEnd="286dp"
+        android:gravity="top"
+        android:layout_marginStart="@dimen/_16mdp"
+        android:lineHeight="17sp"
+        android:text="Flavors"
+        android:textAppearance="@style/package_siz"
+        android:textStyle="bold" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@id/Macronflavors_relativelayout"
+        android:layout_alignBottom="@id/Macronflavors_relativelayout"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_alignTop="@+id/horizontal_scrollerview"
+            android:layout_alignBottom="@id/horizontal_scrollerview"
+            android:orientation="horizontal"
+            tools:ignore="ExtraText">
+
+            />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom|center">
+
+                <ImageView
+                    android:id="@+id/mac_flv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+
+                    android:background="@drawable/ract_macflov_page3_icon"
+                    android:backgroundTint="#F9F9F9"
+                    android:textAlignment="center" />
+
+                <TextView
+
+                    android:id="@+id/mac_flav11"
+
+                    android:layout_width="69dp"
+                    android:layout_height="36dp"
+                    android:layout_alignStart="@+id/mac_flv1"
+                    android:lineHeight="17sp"
+                    android:letterSpacing="0.07"
+                    android:textSize="14sp"
+                    android:layout_alignEnd="@+id/mac_flv1"
+                    android:layout_alignBottom="@+id/mac_flv1"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="3dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginBottom="2dp"
+                    android:gravity="center"
+                    android:text="Herbs"
+                    android:textAppearance="@style/pcs" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom|center">
+
+                <ImageView
+                    android:id="@+id/mac_flv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+
+                    android:background="@drawable/ract_macflov_page3_icon"
+                    android:backgroundTint="#F9F9F9"
+                    android:textAlignment="center" />
+
+                <TextView
+
+                    android:id="@+id/mac_flav21"
+
+                    android:layout_width="69dp"
+                    android:layout_height="36dp"
+                    android:layout_alignStart="@+id/mac_flv2"
+                    android:lineHeight="17sp"
+                    android:letterSpacing="0.07"
+                    android:textSize="14sp"
+                    android:layout_alignEnd="@+id/mac_flv2"
+                    android:layout_alignBottom="@+id/mac_flv2"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="3dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="2dp"
+                    android:gravity="center"
+                    android:text="Spices"
+                    android:textAppearance="@style/pcs" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom|center">
+
+                <ImageView
+                    android:id="@+id/mac_flv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+
+                    android:background="@drawable/ract_macflov_page3_icon"
+                    android:backgroundTint="#F9F9F9"
+                    android:textAlignment="center" />
+
+                <TextView
+
+                    android:id="@+id/mac_flav31"
+
+                    android:layout_width="69dp"
+                    android:layout_height="36dp"
+                    android:layout_alignStart="@+id/mac_flv3"
+                    android:lineHeight="17sp"
+                    android:letterSpacing="0.07"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_alignEnd="@+id/mac_flv3"
+                    android:layout_alignBottom="@+id/mac_flv3"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginBottom="2dp"
+                    android:gravity="center"
+                    android:text="Fruits"
+                    android:textAppearance="@style/pcs" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom|center">
+
+                <ImageView
+                    android:id="@+id/mac_flv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+
+                    android:background="@drawable/ract_macflov_page3_icon"
+                    android:backgroundTint="#FFFFFF"
+                    android:textAlignment="center" />
+
+                <TextView
+
+                    android:id="@+id/mac_flav41"
+
+                    android:layout_width="69dp"
+                    android:layout_height="36dp"
+                    android:layout_alignStart="@+id/mac_flv4"
+                    android:lineHeight="17sp"
+                    android:letterSpacing="0.07"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_alignEnd="@+id/mac_flv4"
+                    android:layout_alignBottom="@+id/mac_flv4"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginBottom="2dp"
+                    android:gravity="center"
+                    android:text="Vegetable"
+                    android:textAppearance="@style/pcs" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom|center">
+
+                <ImageView
+                    android:id="@+id/mac_flv5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+
+                    android:background="@drawable/ract_macflov_page3_icon"
+                    android:backgroundTint="#F9F9F9"
+                    android:textAlignment="center" />
+
+                <TextView
+
+                    android:id="@+id/mac_flav51"
+
+                    android:layout_width="69dp"
+                    android:layout_height="36dp"
+                    android:layout_alignStart="@+id/mac_flv5"
+                    android:textStyle="bold"
+                    android:layout_alignEnd="@+id/mac_flv5"
+                    android:layout_alignBottom="@+id/mac_flv5"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginBottom="2dp"
+                    android:gravity="center"
+                    android:text="Caramelized"
+                    android:textAppearance="@style/pcs" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom|center">
+
+                <ImageView
+                    android:id="@+id/mac_flv6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+
+                    android:background="@drawable/ract_macflov_page3_icon"
+                    android:backgroundTint="#F9F9F9"
+                    android:textAlignment="center" />
+
+                <TextView
+
+                    android:id="@+id/mac_flav61"
+
+                    android:layout_width="69dp"
+                    android:layout_height="36dp"
+                    android:layout_alignStart="@+id/mac_flv6"
+                    android:textStyle="bold"
+                    android:layout_alignEnd="@+id/mac_flv6"
+                    android:layout_alignBottom="@+id/mac_flv6"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginBottom="2dp"
+                    android:gravity="center"
+                    android:text="Baked"
+                    android:textAppearance="@style/pcs" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <Button
+        android:id="@+id/buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginBottom="84dp"
+        android:background="@drawable/button_page3"
+        android:backgroundTint="@color/white"
+        android:text="$64.00"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/addbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="84dp"
+        android:layout_toEndOf="@+id/buy"
+        android:background="@drawable/button_page3"
+        android:text="Add to Cart"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>
+

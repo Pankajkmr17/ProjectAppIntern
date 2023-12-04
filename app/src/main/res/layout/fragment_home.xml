@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.HomeFragment">
+
+    <TextView
+        android:id="@+id/home_bar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:background="#FFFFFF"
+        android:drawableRight="@drawable/loc_icon"
+
+        android:gravity="center"
+        android:text="Hello"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/menu_navigation"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/home_bar"
+        app:layout_constraintStart_toStartOf="@+id/home_bar"
+        app:layout_constraintTop_toTopOf="@+id/home_bar"
+        app:layout_constraintVertical_bias="0.54"
+        app:srcCompat="@drawable/menu"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/rectangle"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/rect"
+
+        app:layout_constraintEnd_toStartOf="@+id/filter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/home_bar" />
+
+
+    <ImageView
+        android:id="@+id/search_icon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+
+        app:layout_constraintBottom_toBottomOf="@id/rectangle"
+
+        app:layout_constraintStart_toStartOf="@id/rectangle"
+        app:layout_constraintTop_toTopOf="@id/rectangle"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ser_icon" />
+
+
+    <EditText
+        android:id="@+id/editext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Search"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
+        android:textColorHint="#77838F"
+
+        app:layout_constraintBottom_toBottomOf="@id/rectangle"
+
+        app:layout_constraintEnd_toEndOf="@+id/rectangle"
+        app:layout_constraintHorizontal_bias="0.278"
+        app:layout_constraintStart_toEndOf="@+id/search_icon"
+        app:layout_constraintTop_toTopOf="@id/rectangle"
+        app:layout_constraintVertical_bias="0.0">
+
+    </EditText>
+
+    <View
+        android:id="@+id/filter"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="14dp"
+
+        android:background="@drawable/filter"
+        android:clickable="true"
+        android:contentDescription="@string/text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toEndOf="@+id/rectangle"
+        app:layout_constraintTop_toBottomOf="@+id/home_bar" />
+
+
+    <LinearLayout
+        android:id="@+id/icon_option"
+        android:layout_width="390dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="22dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle">
+
+
+        <TextView
+            android:id="@+id/all_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="All"
+            android:textAlignment="center"
+            android:drawableTop="@drawable/all"/>
+        <TextView
+            android:id="@+id/bagel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="Bagel"
+            android:textAlignment="center"
+            android:drawableTop="@drawable/bagal"/>
+        <TextView
+            android:id="@+id/cakes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="Cakes"
+            android:textAlignment="center"
+            android:drawableTop="@drawable/cakes"/>
+        <TextView
+            android:id="@+id/macrons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="Macaron"
+            android:textAlignment="center"
+            android:drawableTop="@drawable/macaron"/>
+        <TextView
+            android:id="@+id/bread"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="Bread"
+            android:textAlignment="center"
+            android:drawableTop="@drawable/bread"/>
+
+
+        <TextView
+            android:id="@+id/ple_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="Ple"
+            android:textAlignment="center"
+            android:drawableTop="@drawable/ple"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="409dp"
+        android:layout_height="517dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icon_option">
+
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent" />-->
+
+        <include layout="@layout/food_item"/>
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
